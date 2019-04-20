@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Controller
 public class BugController {
+	
+	@RequestMapping(value="/")
+	public String welcomeDefaultController() {
+		return "Welcome! to the desert";
+	}
 		
 	@RequestMapping(value="/welcome")
 	public String welcomeController() {
