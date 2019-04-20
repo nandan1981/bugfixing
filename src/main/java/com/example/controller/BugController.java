@@ -20,7 +20,7 @@ public class BugController {
 	public String welcomeController() {
 		
 System.out.println("in welcome");
-		return index;
+		return "index";
 	}
 
 }
