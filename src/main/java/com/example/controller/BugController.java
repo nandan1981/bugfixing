@@ -13,14 +13,20 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Controller
 public class BugController {
-	
-	private String index = "index";
-	
+		
 	@RequestMapping(value="/welcome")
 	public String welcomeController() {
-		
-System.out.println("in welcome");
 		return "index";
 	}
 
+	@RequestMapping(value="/registeredWelcome")
+	public String welcomeRegisteredUserController() {
+		
+		return "userIndex";
+	}
+	
+	@RequestMapping(value="/adminWelcome")
+	public String welcomeAdminController() {
+		return "adminIndex";
+	}
 }
