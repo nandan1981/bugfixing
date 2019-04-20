@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class BugController {
 	
-	@RequestMapping(value="/")
+	@RequestMapping(value="/",produces="application/json")
 	public String welcomeDefaultController() {
 		return "Welcome! to the desert";
 	}
